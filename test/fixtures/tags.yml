@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  owner_id: MyString
+  dog_id: MyString
+
+two:
+  owner_id: MyString
+  dog_id: MyString
