@@ -15,13 +15,9 @@ class DogsController < ApplicationController
 
   # POST /dogs
   def create
-    @dog = Dog.new(dog_params)
-
-    if @dog.save
-      render json: @dog, status: :created, location: @dog
-    else
-      render json: @dog.errors, status: :unprocessable_entity
-    end
+    dog = Dog.create!(dog_params)
+    dog.owner = @current_user
+    render json: dog, status: :created
   end
 
   # PATCH/PUT /dogs/1

@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   # post '/createaccount', to: 'owners#create'
   post '/login', to: 'sessions#create'
   get '/autologin', to: 'owners#show'
+  delete '/logout', to: 'sessions#destroy'
   
 
 

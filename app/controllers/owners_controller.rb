@@ -28,15 +28,15 @@ class OwnersController < ApplicationController
 
   # PATCH/PUT /owners/1
   def update
-    if @owner.update(owner_params)
-      render json: @owner
-    else
-      render json: @owner.errors, status: :unprocessable_entity
-    end
+    owner = Owner.find_by(id: session[:owner_id])
+    #owner = Owner.find_by(id: params[:id])
+    owner.update(update_params)
+    render json: owner
   end
 
   # DELETE /owners/1
   def destroy
+    
     @owner.destroy
   end
 
@@ -48,7 +48,11 @@ class OwnersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def owner_params
-      params.permit(:name, :phone, :e_mail, :city_state, :dog_id, :password)
+      params.permit(:name, :phone, :e_mail, :city_state, :dog_id, :password, :id)
+    end
+
+    def update_params
+      params.permit(:name, :phone, :e_mail, :city_state)
     end
 
     def handle_baddata(invalid)

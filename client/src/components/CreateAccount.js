@@ -1,13 +1,12 @@
 import { useState } from "react";
 import React from 'react';
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 
 const CreateAccount = ({setUser}) => {
 
   let navigate = useNavigate();
-  let { username } = useParams();
 
     const [ name, setName ] = useState('');
     const [ phone, setPhone ] = useState('');
@@ -32,9 +31,9 @@ const CreateAccount = ({setUser}) => {
         }
         else {
           res.json().then((err) => setErrors(err.errors));
-        }}         )
-      console.log("success");
-    }
+        }})
+      navigate('/profile');
+    };
 
 
 

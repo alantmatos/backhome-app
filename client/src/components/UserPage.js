@@ -1,10 +1,8 @@
 import React from 'react';
-//import { useNavigate, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 const UserPage = ({user}) => {
-console.log(user)
-    //let navigate = useNavigate();
 
     return ( 
         <div className='user_info'>
@@ -14,6 +12,8 @@ console.log(user)
                 <p> {user ? `E-mail: ${user.e_mail}.` : ''}</p>
                 <p> {user ? `City_State ${user.city_state}.` : ''}</p> 
             </div>
+            <Link to='/editprofile' className='nav_buttons'> Edit My Profile</Link>
+            <Link to='/addapet' className='nav_buttons'> Add A Pet</Link>
         </div>
      );
 }
