@@ -22,25 +22,25 @@ const Navbar = ({user,setUser}) => {
 
 
     return ( 
-        <div>            
-            <div className='navbar'>
-                <div   >
-                    <img className='banner' src={banner} alt='banner'></img>         
-                </div>
-                <div>
-                    <h1 className='title'>Dog Project - navbar</h1>
-                </div>
-                <div>
-                <h2 className='welcome_msg'> {user ? `Welcome, ${user.name}.` : ''} </h2>
+                   
+            <div className='navbar-container'>
+                <div className='header'>
+                    <img className='banner' src={banner} alt='banner'></img>
+                    <h1 className='title'>Back Home</h1>         
                 </div>
 
                 <div>
+                    <h2 className='welcome_msg'> {user ? `Welcome, ${user.name}.` : ''} </h2>
+                </div>
+
+                <div className='button-container'>
                     <Link  to='/home' className='nav_buttons'> Home </Link>
                     {user ? <Link to='/home' className='nav_buttons' onClick={()=>handleLogout()}> LogOut</Link> : <Link to='/login' className='nav_buttons'> Login</Link>}
                     <Link to='/about' className='nav_buttons'> About</Link>
+                    <Link to='/profile' className='nav_buttons'> Profile</Link>
                 </div>
             </div>
-        </div> 
+        
      );
 }
  

@@ -32,17 +32,18 @@ const Login = ({setUser}) => {
             });
             navigate('/profile')
     }
+    console.log(errors)
 
 
     return ( 
-        <div className="login_form">
-        <form onSubmit={login} className="form">
-            <label> Login            
-                <input type="e_mail" name='e_mail' placeholder="E-mail" onChange={(e)=>setEmail(e.target.value)}></input>
-                <input type="password" name='password' placeholder="Password" onChange={(e)=>setPassword(e.target.value)}></input>           
-            </label>
-            <input type="submit" value="Submit"  />
-        </form>
+        <div className="login-container">
+            <form onSubmit={login} className="login">
+                <label> Login            
+                    <input type="e_mail" name='e_mail' placeholder="E-mail" onChange={(e)=>setEmail(e.target.value)}></input>
+                    <input type="password" name='password' placeholder="Password" onChange={(e)=>setPassword(e.target.value)}></input>           
+                </label>
+            <input className="submit" type="submit" value="Submit"  />
+            </form>
         </div>
      );
 }

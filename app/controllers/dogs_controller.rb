@@ -13,6 +13,13 @@ class DogsController < ApplicationController
     render json: @dog
   end
 
+  def findpet
+    dog = Dog.where(tag_number: params[:tag_number])
+    #pet_tag = params[:tag_number]
+    #dog = Dog.find(tag_number: params[:tag_number])
+    render json: dog
+  end
+
   # POST /dogs
   def create
     dog = Dog.create!(dog_params)

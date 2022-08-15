@@ -34,6 +34,7 @@ const CreateAccount = ({setUser}) => {
         }})
       navigate('/profile');
     };
+    console.log(errors)
 
 
 

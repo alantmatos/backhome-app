@@ -3,8 +3,6 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const EditProfile = ({user, setUser }) => {
-    console.log(user);
-    console.log(user.id);
 
     let navigate = useNavigate();
     const id = user.id;

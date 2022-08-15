@@ -16,6 +16,7 @@ class OwnersController < ApplicationController
   # GET /owners/1
   def show
     owner = Owner.find_by(id: session[:owner_id])
+    #owner = Owner.find_by(id: params[:id])
     render json: owner
   end
 

@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   post '/login', to: 'sessions#create'
   get '/autologin', to: 'owners#show'
   delete '/logout', to: 'sessions#destroy'
+
+  get '/findpet/:tag_number', to: 'dogs#findpet'
   
 
 

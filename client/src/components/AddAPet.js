@@ -2,9 +2,8 @@ import React from 'react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const AddAPet = ({user}) => {
+const AddAPet = ({user, updateDog, setReload, reload}) => {
 
-    console.log(user)
     const owner = user;
 
     const [img_url, setImg_url] = useState('');
@@ -16,7 +15,8 @@ const AddAPet = ({user}) => {
     const [tag_number,setTag] = useState('');
     const [safe_tag_number,setSafeTag] = useState('');
     const [color,setColor] = useState('');
-    //const [ owner_id, setOwnerId ] = useState(user.id)
+    
+    
     
 
     const petData = { img_url, name, medical,favorite_food, age, breed, tag_number, safe_tag_number, color, owner }
@@ -33,8 +33,9 @@ const AddAPet = ({user}) => {
           headers: {'Content-type':'application/json',},
         body: JSON.stringify( petData )})
         .then(res=> res.json())
-        .then(res => { console.log('You have added a new pet :D ')})
-      navigate('/profile');
+        .then(res => setReload(!reload))
+        .then( navigate('/profile'))
+      
     }
 
 
