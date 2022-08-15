@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_08_08_165512) do
+ActiveRecord::Schema[7.0].define(version: 2022_08_15_175747) do
   create_table "dogs", force: :cascade do |t|
     t.string "name"
     t.string "favorite_food"
@@ -21,6 +21,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_08_165512) do
     t.integer "safe_tag_number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "img_url"
   end
 
   create_table "owners", force: :cascade do |t|
@@ -31,6 +32,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_08_165512) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "password_digest"
+    t.string "img_url"
   end
 
   create_table "tags", force: :cascade do |t|

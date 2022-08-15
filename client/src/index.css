@@ -14,19 +14,65 @@ input {
     box-sizing: border-box;
 }
 
-.user_info{
+.user_container{
     border-style: double;
-    margin-top: 10px;
+    height: 350px;
     width: 300px;
-    height: auto;
 }
 
-.dog_info{
-    border-style: double;
-    margin-top: 10px;
+.dog_container{
+    height: 350px;
     width: 300px;
-    height: auto;
 }
+
+.user_btn{
+    text-decoration: none;
+    height: 50px;
+    width: 250px;
+
+}
+
+
+.user_img{
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    border-radius: 50%;
+}
+.img_size{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+
+.hero_container{
+display: flex;
+margin-left: 20px;
+margin-top: 20px;
+
+}
+
+.user_header{
+    display:flex;
+}
+
+
+.dog_container{
+    border-style: double;
+    
+}
+
+.dog_header{
+    display: flex;
+}
+
+.dog_img{
+    border-style: solid;
+    width: 100px;
+    height: 100px;
+}
+
 
 .title{
     margin: 0;
@@ -109,6 +155,10 @@ justify-content: center;
     height: 20px;
     width: 80px;
 }
+
+
+
+
 /*
 .navbar{
     width: 100%;

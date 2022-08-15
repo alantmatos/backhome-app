@@ -49,11 +49,11 @@ class OwnersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def owner_params
-      params.permit(:name, :phone, :e_mail, :city_state, :dog_id, :password, :id)
+      params.permit(:name, :phone, :e_mail, :city_state, :dog_id, :password, :id, :img_url)
     end
 
     def update_params
-      params.permit(:name, :phone, :e_mail, :city_state)
+      params.permit(:name, :phone, :e_mail, :city_state, :img_url)
     end
 
     def handle_baddata(invalid)
