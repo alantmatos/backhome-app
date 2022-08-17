@@ -17,7 +17,7 @@ const UserPage = ({user, fetchData, setUser, setReload, reload}) => {
 
     const renderDogInfo = dogArr.map(dog => {
         return  ( 
-    <div key={dog.id} className='dog_container'>
+    <div key={dog.id} className='dog_container' onClick={(e)=>{console.log(e)}}>
 
         <div className='dog_header'>        
         <img className='dog_img' src={dog.img_url}></img>
@@ -33,7 +33,7 @@ const UserPage = ({user, fetchData, setUser, setReload, reload}) => {
 
         <div className='dog_btn'>
              {/* <Link to='/editDog' className='nav_buttons'> Edit Pet </Link> */}
-            <button className='nav_buttons' onClick={(e)=>{handleEditPet(e)}}> Edit Pet</button>
+            <button className='nav_buttons' > Edit Pet</button>
             <button   onClick={()=>{handleDeletePet(dog.id)}} className='nav_buttons'> Remove </button>
         </div>
         

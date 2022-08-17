@@ -36,9 +36,9 @@ const Login = ({setUser}) => {
 
 
     return ( 
-        <div className="login-container">
-            <form onSubmit={login} className="login">
-                <label> Login            
+        <div className="login_container">
+            <form onSubmit={login} className="login_form">
+                <label> Login: 
                     <input type="e_mail" name='e_mail' placeholder="E-mail" onChange={(e)=>setEmail(e.target.value)}></input>
                     <input type="password" name='password' placeholder="Password" onChange={(e)=>setPassword(e.target.value)}></input>           
                 </label>
