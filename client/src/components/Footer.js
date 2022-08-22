@@ -3,12 +3,16 @@ import { Navigate, useNavigate } from 'react-router-dom';
 import facebook from '../Assets/facebook.png'
 import instagram from '../Assets/instagram.png'
 import twitter from '../Assets/twitter.png'
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
 
     let navigate = useNavigate()
 
+    const link = () => {
+       console.log("test")
+    }
 
 
 
@@ -22,9 +26,15 @@ const Footer = () => {
         </div>
 
         <div className='social_media'>
-            <button className='social_network'></button>
+
+        <a href="https://www.facebook.com/Back-Home-110748035078931">
+            <button className='social_network' type="button" >  </button>
+        </a>
+            
             <button className='social_network2'></button>
             <button className='social_network3'></button>
+            
+ 
         </div>
 
   

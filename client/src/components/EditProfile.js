@@ -37,7 +37,7 @@ const handleEditProfile = (e) => {
 
     return ( 
     <>    
-        <div className="edit_profile_box">
+        <div className="edit_profile_container">
         <form className="form">
             <label> Edit My Profile:
             <input type="text" name='name' value={name} placeholder="Name" onChange={(e)=>setName(e.target.value)} ></input>
@@ -46,7 +46,7 @@ const handleEditProfile = (e) => {
             <input type="text" name='city_state' value={city_state} placeholder="City_State" onChange={(e)=>setCity_state(e.target.value)}></input>
             <input type="text" name='img_url' value={img_url} placeholder="Profile Image" onChange={(e)=>setImg_url(e.target.value)}></input>
             </label>
-            <input type="submit" value="Submit" onClick={(e)=>handleEditProfile(e)} />
+            <input className='edit_submit' type="submit" value="Submit" onClick={(e)=>handleEditProfile(e)} />
         </form>
         </div>
     </>

@@ -41,7 +41,7 @@ const AddAPet = ({user, updateDog, setReload, reload}) => {
 
 
     return ( 
-        <div className="Add-a-pet_box">
+        <div className="Add_pet_container">
         <form className="form">
             <label> Add A Pet:
                 <input type="text" name='img_url'  placeholder="img url" onChange={(e)=>setImg_url(e.target.value)} ></input>
@@ -54,7 +54,7 @@ const AddAPet = ({user, updateDog, setReload, reload}) => {
                 <input type="text" name='safe_tag_number'  placeholder="Safe Tag Number" onChange={(e)=>setSafeTag(e.target.value)}></input>
                 <input type="text" name='color'  placeholder="Color" onChange={(e)=>setColor(e.target.value)} ></input>
             </label>
-            <input type="submit" value="Submit" onClick={(e)=>handleAddaPet(e)} />
+            <input className='pet_submit' type="submit" value="Submit" onClick={(e)=>handleAddaPet(e)} />
         </form>
         </div>
      );

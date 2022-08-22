@@ -29,11 +29,16 @@ class DogsController < ApplicationController
 
   # PATCH/PUT /dogs/1
   def update
-    if @dog.update!(dog_params)
-      render json: @dog
-    else
-      render json: @dog.errors, status: :unprocessable_entity
-    end
+    # if @dog.update!(update_dog_params)
+    #   render json: @dog
+    # else
+    #   render json: @dog.errors, status: :unprocessable_entity
+    # end
+
+    dog = Dog.find_by(id: params[:id])
+    dog.update!(update_dog_params)
+    render json: dog
+    
   end
 
   # DELETE /dogs/1
@@ -49,6 +54,11 @@ class DogsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def dog_params
-      params.permit(:name, :favorite_food, :age, :color, :breed, :tag_number, :safe_tag_number, :owner_id, :img_url)
+      params.permit(:name, :favorite_food, :age, :color, :breed, :tag_number, :safe_tag_number, :owner_id, :img_url )
     end
+
+    def update_dog_params
+      params.permit(:name, :favorite_food, :age, :color, :breed, :tag_number, :safe_tag_number, :owner_id, :img_url, :id, :dogData)
+    end
+
 end

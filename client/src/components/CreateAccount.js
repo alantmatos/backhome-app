@@ -41,9 +41,9 @@ const CreateAccount = ({setUser}) => {
 
 
     return ( 
-        <div className="formbox">
+        <div className="sign_up_container">
         <form className="form">
-            <label> Create an Account
+            <label> Create an Account:
             <input type="text" name='name' placeholder="Name" onChange={(e)=>setName(e.target.value)} ></input>
             <input type="tel" name='phone' placeholder="Phone" onChange={(e)=>setPhone(e.target.value)}></input>
             <input type="email" name='e_mail' placeholder="E-mail" onChange={(e)=>setEmail(e.target.value)}></input>
