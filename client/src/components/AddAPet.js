@@ -44,15 +44,16 @@ const AddAPet = ({user, updateDog, setReload, reload}) => {
         <div className="Add_pet_container">
         <form className="form">
             <label> Add A Pet:
-                <input type="text" name='img_url'  placeholder="img url" onChange={(e)=>setImg_url(e.target.value)} ></input>
+                <input type="text" name='img_url'  placeholder="Profile Image" onChange={(e)=>setImg_url(e.target.value)} ></input>
                 <input type="text" name='name'  placeholder="Name" onChange={(e)=>setName(e.target.value)}></input>
+                <input type="text" name='Breed'  placeholder="Breed" onChange={(e)=>setBreed(e.target.value)}></input>
+                <input type="text" name='color'  placeholder="Color" onChange={(e)=>setColor(e.target.value)} ></input>
                 <input type="text" name='Medical'  placeholder="Medical Condition" onChange={(e)=>setMedical(e.target.value)}></input>
                 <input type="text" name='Favorite_Food'  placeholder="Favorite Food" onChange={(e)=>setFavorite_food(e.target.value)}></input>
-                <input type="text" name='Age'  placeholder="Age" onChange={(e)=>setAge(e.target.value)} ></input>
-                <input type="text" name='Breed'  placeholder="Breed" onChange={(e)=>setBreed(e.target.value)}></input>
+                <input type="text" name='Age'  placeholder="Age" onChange={(e)=>setAge(e.target.value)} ></input>                
                 <input type="text" name='tag_number'  placeholder="Tag Number" onChange={(e)=>setTag(e.target.value)} ></input>                
                 <input type="text" name='safe_tag_number'  placeholder="Safe Tag Number" onChange={(e)=>setSafeTag(e.target.value)}></input>
-                <input type="text" name='color'  placeholder="Color" onChange={(e)=>setColor(e.target.value)} ></input>
+                
             </label>
             <input className='pet_submit' type="submit" value="Submit" onClick={(e)=>handleAddaPet(e)} />
         </form>

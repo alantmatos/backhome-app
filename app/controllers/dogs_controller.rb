@@ -15,8 +15,6 @@ class DogsController < ApplicationController
 
   def findpet
     dog = Dog.where(tag_number: params[:tag_number])
-    #pet_tag = params[:tag_number]
-    #dog = Dog.find(tag_number: params[:tag_number])
     render json: dog
   end
 
@@ -29,12 +27,6 @@ class DogsController < ApplicationController
 
   # PATCH/PUT /dogs/1
   def update
-    # if @dog.update!(update_dog_params)
-    #   render json: @dog
-    # else
-    #   render json: @dog.errors, status: :unprocessable_entity
-    # end
-
     dog = Dog.find_by(id: params[:id])
     dog.update!(update_dog_params)
     render json: dog

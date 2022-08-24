@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 
 const EditDog = ( {dog, setEditPetForm, setReload, reload } ) => {
 
@@ -18,13 +17,9 @@ let id = dog.id
     const [ safe_tag_number, setSafe_tag_number] = useState(dog.safe_tag_number);
     const [ color, setColor] = useState(dog.color);
 
-    let navigate = useNavigate();
-
 
     const handleEditPet = (e) => {
         e.preventDefault();
-
-    //  const dogData = { img_url, name, favorite_food, age, breed, tag_number, safe_tag_number, color }
     
         fetch(`/dogs/${id}`,{
             method: 'PATCH',
@@ -35,12 +30,6 @@ let id = dog.id
             .then(res => { setEditPetForm(false)
             })
             .then(res => { setReload(!reload) });
-        }
-
-
-
-        const closeform = () => {
-            setEditPetForm(false)
         }
 
 
@@ -64,6 +53,7 @@ let id = dog.id
             {/* <input type="text" name='img_url' value={img_url} placeholder="Profile Image" onChange={(e)=>setmedicalCondition(e.target.value)}></input> */}
             </label>
             <input className='edit_submit' type="submit" value="Submit" onClick={(e)=>handleEditPet(e)} />
+            <input className='edit_submit' type="submit" value="Cancel" onClick={()=>setEditPetForm(false)} />
         </form>
         </div>
         </>

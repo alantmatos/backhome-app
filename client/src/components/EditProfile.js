@@ -41,10 +41,11 @@ const handleEditProfile = (e) => {
         <form className="form">
             <label> Edit My Profile:
             <input type="text" name='name' value={name} placeholder="Name" onChange={(e)=>setName(e.target.value)} ></input>
-            <input type="tel" name='phone' value={phone} placeholder="Phone" onChange={(e)=>setPhone(e.target.value)}></input>
-            <input type="email" name='e_mail' value={e_mail} placeholder="E-mail" onChange={(e)=>setE_mail(e.target.value)}></input>
-            <input type="text" name='city_state' value={city_state} placeholder="City_State" onChange={(e)=>setCity_state(e.target.value)}></input>
             <input type="text" name='img_url' value={img_url} placeholder="Profile Image" onChange={(e)=>setImg_url(e.target.value)}></input>
+            <input type="email" name='e_mail' value={e_mail} placeholder="E-mail" onChange={(e)=>setE_mail(e.target.value)}></input>
+            <input type="tel" name='phone' value={phone} placeholder="Phone" onChange={(e)=>setPhone(e.target.value)}></input>            
+            <input type="text" name='city_state' value={city_state} placeholder="City_State" onChange={(e)=>setCity_state(e.target.value)}></input>
+            
             </label>
             <input className='edit_submit' type="submit" value="Submit" onClick={(e)=>handleEditProfile(e)} />
         </form>

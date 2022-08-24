@@ -1,80 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
 
 
-body{
+body {
     margin: 0;
-    }
-    
-    
-    /* Login */
-    
-    .login_container{
+}
+
+
+/* Login */
+
+.login_container {
     display: flex;
     position: relative;
     height: 100vh;
     width: 100%;
     align-items: center;
     justify-content: center;
-    }
-    
-    .login_form{
+}
+
+.login_form {
     height: 50%;
-    width: 50%;    
-    }
-    
-    .login_container input {
-        margin: 10px;
-        border: none;
-        border-bottom: 3px solid black;
-    }
-    
-    .submit{
-        background-color: #000000;
-        color: #EEEEEE;
-        }
-    
+    width: 50%;
+}
+
+.login_container input {
+    margin: 10px;
+    border: none;
+    border-bottom: 3px solid black;
+}
+
+.submit {
+    background-color: #000000;
+    color: #EEEEEE;
+}
+
 /* CREATE AN ACCOUNT */
-    
-.sign_up_container{
+
+.sign_up_container {
     display: flex;
     position: relative;
     height: 65vh;
     width: 100%;
     align-items: center;
     justify-content: center;
-    }
-    
-    .form{
+}
+
+.form {
     font-size: larger;
     height: 50%;
-    width: 10%; 
+    width: 10%;
     align-items: center;
-    justify-content: center; 
-    margin: 10px; 
-    
-    }
-    
-    .sign_up_container input {
-        margin: 10px;
-        border: none;
-        border-bottom: 3px solid black;
-    }
-    
-    .form submit{
-        
-        background-color: #4CAF50; /* Green */
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 10px;
-        }
+    justify-content: center;
+    margin: 10px;
+
+}
+
+.sign_up_container input {
+    margin: 10px;
+    border: none;
+    border-bottom: 3px solid black;
+}
+
+.form submit {
+
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+}
+
+
 /* ADD A PET */
 
-.Add_pet_container{
+.pet_card_buttons {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+}
+
+
+
+.Add_pet_container {
     display: flex;
     position: relative;
     height: 35vh;
@@ -90,9 +107,10 @@ body{
     border-bottom: 3px solid black;
 }
 
-.pet_submit{
-        
-    background-color: #4CAF50; /* Green */
+.pet_submit {
+
+    background-color: #4CAF50;
+    /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -101,12 +119,12 @@ body{
     display: inline-block;
     font-size: 16px;
     margin: 10px;
-    }
+}
 
 
 
 /* PET EDIT FORM */
-.edit_pet_container{
+.edit_pet_container {
     z-index: 10;
     background-color: rgba(128, 128, 128, 0.399);
     border-style: solid;
@@ -115,13 +133,13 @@ body{
 
 }
 
-    
+
 
 
 
 /* EDIT PROFILE */
 
-.edit_profile_container{
+.edit_profile_container {
     display: flex;
     position: relative;
     height: 35vh;
@@ -137,9 +155,10 @@ body{
     border-bottom: 3px solid black;
 }
 
-.edit_submit{
-        
-    background-color: #4CAF50; /* Green */
+.edit_submit {
+
+    background-color: #4CAF50;
+    /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -148,143 +167,157 @@ body{
     display: inline-block;
     font-size: 16px;
     margin: 10px;
-    }
-    
+}
 
 
 
-    
-    /* NAVBAR */
 
-    .navbar_img{
-        height: 250px;
-        width: 250px;
-        margin-top: 5px;
-    }
-    
-    .navbar_container{
+
+/* NAVBAR */
+
+.navbar_img {
+    height: 250px;
+    width: 250px;
+    margin-top: 5px;
+}
+
+.navbar_container {
     background-color: #EEEEEE;
     border: 1px solid black;
     display: flex;
     height: 250px;
     width: 100%;
-    
+
     justify-content: space-between;
-    
-    }
 
-    .nav_ul{
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        width: 350px;
-        display: flex;
-        justify-content: center;
-        align-items:flex-end;
-        top: 0;
-        
+}
 
-    }
-
-    .title_container{
-        width: 100%;
-        margin-top: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        margin-right: 10px;
+.nav_ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    top: 0;
 
 
-    }
-    
-    
-    .title{
-        /* align-content: center;
+}
+
+.title_container {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 10px;
+
+
+}
+
+
+.title {
+    /* align-content: center;
         justify-content: center; */
-   
-        margin: 0;
-        font-size: 100px;
-        font-family: 'Rubik Distressed', cursive;
-        font-weight: 400;
-    
 
-    }
-    
-    .navbar_header{
-        display: flex;
-        align-items: center;
-       width: 30%;
-    }
-    
-    .welcome_msg{
+    margin: 0;
+    font-size: 100px;
+    font-family: 'Rubik Distressed', cursive;
+    font-weight: 400;
+
+
+}
+
+.navbar_header {
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+.welcome_msg {
     margin-bottom: 20px;
     font-family: cursive;
     margin-left: 2px;
-    }
-    
-    .button-container{
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        
-    }
-    
-    .nav_buttons{
-        text-decoration: none;
-        margin: 10px;
-        color: #000000;
-    }
-    
-    
-    /* HOME PAGE */
-    
-    .home{
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .quote{
-        display: flex;
-        height: 300px;
-        width: 500px;
-    }
-    
-    .home_btn_container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .home_buttons{
-        background-color: #4CAF50; /* Green */
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 10px;
-    }
-    
-    .text{
-        font-family: 'Times New Roman', Times, serif;
-        height: 400px;
-        width: 400px;
-        font-size: large;
-    
-    }
-    
-    .text p {
-        margin-top: 20px;
-    }
-    
-    
-    
-    
-    /* USER PAGE  */
-    
-    /* .hero_container{
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+.nav_buttons {
+    text-decoration: none;
+    margin: 10px;
+    color: #000000;
+}
+
+.user_buttons {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 4px 4px;
+    text-align: center;
+    text-decoration: none;
+    /*  display: inline-flex;
+        font-size: 16px;*/
+    margin: 3px;
+}
+
+
+/* HOME PAGE */
+
+.home {
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    display: flex;
+    height: 300px;
+    width: 500px;
+}
+
+.home_btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_buttons {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.text {
+    font-family: 'Times New Roman', Times, serif;
+    height: 400px;
+    width: 400px;
+    font-size: large;
+
+}
+
+.text p {
+    margin-top: 20px;
+}
+
+
+
+
+/* USER PAGE  */
+
+/* .hero_container{
     width: 100%;
     }
     
@@ -297,140 +330,294 @@ body{
     
     } */
 
-    .user_container{
+.user_container {
     display: block;
     margin-top: 5px;
-    margin-left: 8px;            
-    }
+    margin-left: 8px;
+}
 
-    .user_card{
-        height: 300px;
-        width: 250px;
-    }
-    
-       .img_size{
-        width: 100px;
-        height: 100px;
-        border-radius: 40%;
-    }
+.user_card {
+    height: 300px;
+    width: 250px;
+}
 
-      .user_header{
-        display: flex;
-        align-items: center;
-        align-content: center;
-    } 
-    
-.user_info{
+.img_size {
+    width: 100px;
+    height: 100px;
+    border-radius: 40%;
+}
+
+.user_header {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.user_info {
     display: block;
     height: 300px;
     width: 250px;
-    }
+}
 
 
-    
-    
-    /* Dog containter */
-    
-    .dog_container{
-        display: flex;
-        justify-content: center;
-        
-    }
-    
-    .dog_header{
-        display: flex;
-        align-items: center;
-        align-content: center;
-    }
-    
-
-    .dog_card{
-        height: 320px;
-        width: 250px;
-        border-style: solid;
-        margin: 0;
-        margin-right: 0;
-        margin-right: 5px;  
 
 
-    }
+/* Dog containter */
+
+.dog_container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.dog_header {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
 
 
-    .dog_img{
-        border-radius: 50%;
-        width: 100px;
-        height: 100px;
-    }
-
-    .button_container{        
-        justify-content: center;
-        align-content: center;
-        display: flex;
-    }
+.dog_card {
+    height: 320px;
+    width: 250px;
+    border-style: solid;
+    margin: 0;
+    margin-right: 0;
+    margin-right: 5px;
 
 
-    .pet_card_buttons{        
-        background-color: #4CAF50;
-    }
-    
-    
-    
-    
-    
-    /* FOOTER */
-    
-    .footer{
-        background-color:#EEEEEE;
-        border: 1px solid #000000;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-        left: 0;
-        height: 150px;
-        
-    }
-    
-    .brand{
-        align-items: center;
-        justify-content: center;
-        display: flex;
-    }
-    
-    .social_media button{
-        z-index: 10;
-        border-radius: 50%;
-        cursor:pointer;
-        width: 50px ;
-        height: 50px;
-    }
-    
-    .social_network{
-        background-image: url('https://cdn-icons-png.flaticon.com/512/124/124010.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    
-    
-    .social_network2{
-        background-image: url('https://i.pinimg.com/564x/5e/ff/6c/5eff6c25d920f6a78fda288e6589bf8b.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    
-    
-    .social_network3{
-        background-image: url('https://cdn-icons-png.flaticon.com/512/124/124021.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+}
 
-    .summary{
-        width: 400px;
-    }
 
-    .brand{
-        display: flex;
-    }
+.dog_img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.button_container {
+    justify-content: center;
+    align-content: center;
+    display: flex;
+}
+
+
+.pet_card_buttons {
+    background-color: #4CAF50;
+}
+
+/* FOUND A DOG
+
+*/
+
+.dog_profile_image {
+    width: 100PX;
+    height: 100PX;
+    border-radius: 50%;
+}
+
+
+.found_dog_container {
+    display: flex;
+}
+
+.foundapet_form {
+    height: 80px;
+    width: 250px;
+    border-style: solid;
+    align-content: center;
+
+}
+
+.foundapet_form input {
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+}
+
+.foundapet_btn {
+    background-color: #4CAF50;
+    color: #EEEEEE;
+    border-style: none;
+    height: 25px;
+    margin-left: 80px;
+}
+
+.found_dog_card {
+
+    height: 300px;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    z-index: 10;
+}
+
+.found_dog_header {
+    display: flex;
+}
+
+.found_dog_header h1 {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.found_dog_card button {
+    background-color: #4CAF50;
+    color: #EEEEEE;
+    border-style: none;
+    width: auto;
+    height: 30px;
+    margin-left: 50px;
+}
+
+.tag_form{
+    width: 250px;
+    height: 150px;
+    align-content: center;
+}
+.safe_tag_form{
+    width: 250px;
+    height: 150px;
+}
+
+.owner_profile_image{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border-style: solid;
+}
+
+
+.display_top_container{
+    justify-content: center;
+
+}
+
+
+.thank_you_msg{
+font-family: monospace;
+font-size: 20px;
+}
+.display{
+    align-items: center;
+    align-content: center;
+}
+
+.display_owner_dog{
+    display: flex;
+}
+
+
+
+.display_container{
+    justify-content: center;
     
-    
-    
+
+}
+.display_card{
+    height: 400px;
+    width: 300px;
+    border-style: solid;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #EEEEEE;
+    border: 1px solid #000000;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 150px;
+
+}
+
+.brand {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.social_media button {
+    z-index: 10;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+.social_network {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/124/124010.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.social_network2 {
+    background-image: url('https://i.pinimg.com/564x/5e/ff/6c/5eff6c25d920f6a78fda288e6589bf8b.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.social_network3 {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/124/124021.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.summary {
+    width: 400px;
+}
+
+.brand {
+    display: flex;
+}
+
+
+
+
+
+
+
+/* progress bar */
+
+.progress_container {
+    background-color: gray;
+    height: 40px;
+    width: 100vh;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.step_1 {
+    background-color: pink;
+    width: 40px;
+    height: 40px;
+
+}
+
+.step_2 {
+    background-color: #4CAF50;
+    width: 40px;
+    height: 40px;
+
+}
+
+.step_3 {
+    background-color: yellow;
+    width: 40px;
+    height: 40px;
+
+}
+
+.step_4 {
+    background-color: aqua;
+    width: 40px;
+    height: 40px;
+
+}
