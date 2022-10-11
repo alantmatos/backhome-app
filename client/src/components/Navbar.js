@@ -26,18 +26,14 @@ const Navbar = ({ user, setUser }) => {
         <div className='navbar_container'>
 
             <div className='user_container'>
-
                 <div className='user_card'>
                     <div className='user_header'>
-
                         <div className='user_img'>
                             {user ? <img src={user.img_url} className="img_size" alt="User profile"></img> : null}
                         </div>
-
                         <div className='user_name'>
                             <h1>{user ? `Hi, ${user.name}.` : null}</h1>
                         </div>
-
                     </div>
 
 
@@ -73,7 +69,7 @@ const Navbar = ({ user, setUser }) => {
                 <h1 className='title'>Back Home</h1>
 
             </div>
-         
+
             <ul className='nav_ul'>
                 <li>
                     <Link to='/home' className='nav_buttons'> Home </Link>
