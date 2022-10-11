@@ -10,6 +10,7 @@ import FoundaPet from './components/FoundaPet';
 import UserPage from './components/UserPage';
 import AddAPet from './components/AddAPet';
 import EditProfile from './components/EditProfile';
+import About from './components/About';
 
 
 
@@ -42,6 +43,7 @@ const fetchData = () => {
         <Routes>
             <Route exact path='/' element={<Home></Home> }> </Route>
             <Route path='/home' element={<Home></Home> }> </Route>
+            <Route path='/about' element={<About></About> }> </Route>
             <Route path='/login'element={<Login setUser={setUser} ></Login> }></Route>
             <Route path='/createaccount' element={<CreateAccount setUser={setUser}></CreateAccount>}> </Route> 
             <Route path='/foundapet' element={<FoundaPet></FoundaPet>}></Route>

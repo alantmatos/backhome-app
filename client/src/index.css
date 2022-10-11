@@ -223,6 +223,16 @@ body {
     margin-top: 20px;
 }
 
+/* About */
+.about{
+    width: 500px;
+    height: 300px;
+}
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -251,6 +261,9 @@ body {
 .dog_container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 54vh;
 
 }
 
@@ -264,10 +277,10 @@ body {
 .dog_card {
     height: 320px;
     width: 250px;
-    border-style: solid;
-    margin: 0;
+    border: 1px solid black;
+    margin: 5px;
     margin-right: 0;
-    margin-right: 5px;
+    background-color: #dde0e5;
 
 
 }
@@ -288,11 +301,14 @@ body {
 
 .pet_card_buttons {
     background-color: #4CAF50;
+    width: 80px;
+    height: 25px;
 }
 
 /* FOUND A DOG
 
 */
+
 
 .dog_profile_image {
     width: 100PX;
@@ -409,7 +425,7 @@ font-size: 20px;
 /* FOOTER */
 
 .footer {
-    background-color: #f2e9e4;
+    background-color: #dde0e5;
     border: 1px solid #000000;
     position: fixed;
     width: 100%;
@@ -445,15 +461,11 @@ font-size: 20px;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
 .social_network2 {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
 .social_network3 {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png');
     background-repeat: no-repeat;

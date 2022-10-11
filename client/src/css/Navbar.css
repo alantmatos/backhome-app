@@ -1,7 +1,7 @@
 /* NAVBAR */
 
 .navbar_container {
-    background-color: #f2e9e4;
+    background-color: #dde0e5;
     border: 1px solid black;
     height: 279px;
     width: 100vw;
@@ -102,7 +102,7 @@
 .user_card {
     height: 280px;
     width: 250px;
-    background-color: #c9ada7;
+    background-color: #909eb1;
     border-right: 1px solid black;
 }
 
@@ -127,7 +127,7 @@
 
 
 .nav_btn{
-    background-color: #c9ada7;
+    background-color: #909eb1;
     display: flex;
     align-items: center;
     justify-content: center;
